@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSON-Demo</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <script>
-        const handlePost = async() => {
-            const response = await fetch('./data.json')
-            const data = await response.json()
-            console.log(data)
-        }
-        handlePost()
-    </script>
+    <h2><a href="#">Home</a></h2>
+    <h2><a href="./feedback.html">Feedback</a></h2>
+    <div class="indexform">
+        <p class="title">Feedback form</p>
+        <form>
+            <input type="text" id="name" placeholder="Your name" required><br><br>
+            <input type="text" id="role" placeholder="Your role" required><br><br>
+            <input type="text" id="feedback" placeholder="Your feedback" required><br><br>
+            <input type="submit" value="update" id="update">
+        </form>
+    </div>
+    <button id="getbutton">Get Data</button><br><br>
+    <table id="formTable">
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Date of joining</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+    <script src="/script.js"></script>
 </body>
 </html>
