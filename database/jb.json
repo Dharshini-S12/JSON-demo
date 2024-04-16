@@ -1,10 +1,3 @@
 {
-  "users": [
-    {
-      "id": "1",
-      "Name": "dharshini",
-      "Role": "developer",
-      "feedback": "good"
-    }
-  ]
+  "users": []
 }
